@@ -1,10 +1,21 @@
 import React from 'react';
+import {Route, Switch} from "react-router-dom";
+import routes from "./routes";
 
 function App() {
   return (
-    <div className="App">
-      Isomorphic Web App
-    </div>
+    <Switch>
+      {routes.map((route, idx) =>
+        <Route
+          key={idx}
+          path={route.path}
+          exact={route.exact}
+          render={(routeProps) => (
+            <route.component {...routeProps} />
+          )}
+        />
+      )}
+    </Switch>
   );
 }
 
