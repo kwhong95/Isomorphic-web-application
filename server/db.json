@@ -5,7 +5,7 @@
       "name": "Kim",
       "age": 23,
       "married": true,
-      "average": 4.5,
+      "average": "trainee",
       "status": "not_active"
     },
     {
@@ -103,6 +103,17 @@
       "author": 1,
       "picture": 2,
       "id": 9
+    },
+    {
+      "title": "Awesome post",
+      "content": "Some Super Content",
+      "id": 10
+    },
+    {
+      "title": "Awesome post",
+      "content": "Some Super Content",
+      "status": "DRAFT",
+      "id": 11
     }
   ],
   "pictures": [
