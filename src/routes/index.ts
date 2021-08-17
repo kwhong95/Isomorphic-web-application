@@ -1,4 +1,5 @@
 import Home from "./Home";
+import PageNotFound from "./PageNotFound";
 
 interface IRoutes {
   path: string;
@@ -14,6 +15,12 @@ const routes: IRoutes[] = [
     component: Home,
     name: "Home Page"
   },
+  {
+    path: '*',
+    exact: false,
+    component: PageNotFound,
+    name: "Page Not Found(404)"
+  }
 ]
 
 export default routes;
